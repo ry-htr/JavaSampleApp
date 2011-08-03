@@ -4,18 +4,12 @@
  */
 package javasampleapp;
 
-/**
- *
- * @author hattoriryou
- */
 public class Doller extends Money{
-    
-    Doller(int amount){
-        this.amount = amount;
+    Doller(int amount, String currency){
+        super(amount, currency);
     }
-    
-    Doller times(int multiplier){
-        return new Doller(amount * multiplier);
-    }
-    
+
+    Money times(int multiplier){
+        return Money.doller(amount * multiplier);
+    }    
 }
