@@ -4,10 +4,6 @@
  */
 package javasampleapp;
 
-/**
- *
- * @author hattoriryou
- */
 public interface Expression {
-
+    Money reduce(String to);
 }
